@@ -12,4 +12,4 @@ def fizzbuzz():
             rt += "Buzz "
         else:
             rt += str(i)+" "
-    print(rt)
+    print(rt, end="")
