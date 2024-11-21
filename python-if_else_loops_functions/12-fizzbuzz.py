@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    rt=""
-    for i in range (101):
+    rt = ""
+    for i in range (1, 101):
         if i % 3 == 0:
             rt += "Fizz"
             if i % 5 == 0:
@@ -12,6 +12,4 @@ def fizzbuzz():
             rt += "Buzz "
         else:
             rt += str(i)+" "
-
-
-
+    print(rt)
