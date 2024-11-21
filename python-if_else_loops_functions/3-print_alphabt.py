@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("{}".format(''.join(chr(i) for i in range(97, 123) if chr(i) not in 'qe')), end="")
+alphabet = ''.join(chr(i) for i in range(97, 123) if chr(i) != 'q' and chr(i) != 'e')
+print(alphabet)
