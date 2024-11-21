@@ -8,7 +8,7 @@ def fizzbuzz():
                 rt += "Buzz "
             else:
                 rt += " "
-        elif i % 5 ==0:
+        elif i % 5 == 0:
             rt += "Buzz "
         else:
             rt += str(i)+" "
