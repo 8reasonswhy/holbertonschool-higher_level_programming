@@ -11,7 +11,7 @@ class Square:
     """
     def __init__(self, size=0):
         """
-        La méthode __init__ est un constructeur qui est appeé automatiquementfor 
+        La méthode __init__ est un constructeurest  appelé automatiqueme POUR
         l'instanciation d'un nouvel objet
         """
         if not isinstance(size, int):
