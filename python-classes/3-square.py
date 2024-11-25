@@ -7,12 +7,12 @@ This module defines a class Square to represent a square shape.
 
 class Square:
     """
-    Class square on defini la class avec le mot class 
+    Class representing a square with a private size attribute.
     """
     def __init__(self, size=0):
         """
-        la methode init est un constructeur appele automatiquement lors de 
-        l instanciacion d un nouveau object 
+        The __init__ method is a constructor that is called automatically
+        when a new object is instantiated.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -20,8 +20,8 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-     def area(self):
-         """
-         definition d un getter on va dire qui retourn l qire de carre
-         """
-        return self.__size**2
+    def area(self):
+        """
+        This method returns the area of the square (size squared).
+        """
+        return self.__size ** 2
