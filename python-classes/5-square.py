@@ -44,7 +44,7 @@ class Square:
         Méthode pour calculer l'aire du care
         """
         return self.__size ** 2
-    
+
     def my_print(self):
         """
         la pour imprimer une image de notre carree on va dire
@@ -54,4 +54,3 @@ class Square:
         else:
             for i in range(self.size):
                 print('#'*self.size)
-
