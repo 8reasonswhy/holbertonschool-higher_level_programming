@@ -14,14 +14,15 @@ class Square:
         """
         The __init__ method is a constructor that is called automatically
         when a new object is instantiated.
-        Qaund on veut initialiser le truc pythin fait appel automatique au setter grace au tag
+        Qaund on veut initialiser le truc python 
+        fait appel automatique au setter grace au tag
         """
         self.size = size  # Utilise le setter pour initialiser
 
     @property
     def size(self):
         """
-        Getter pour récupérer  valeur de size car elle est prive 
+        Getter pour récupérer  valeur de size car elle est pri
         on est obliger d utiliser le tag  @property
         """
         return self.__size
@@ -29,8 +30,8 @@ class Square:
     @size.setter
     def size(self, value):
         """
-        Setter pour modifier la valeur de notre trucs privee il faut obligatoirement 
-        utiliser le tag @<nom de votre truc>.setter
+        Setter pour modifier la valeur de notre trucs privee il faut
+        obligatoirement utiliser le tag @<nom de votre truc>.setter
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -40,6 +41,6 @@ class Square:
 
     def area(self):
         """
-        Méthode pour calculer l'aire du carré (taille au carré).
+        Méthode pour calculer l'aire du care
         """
         return self.__size ** 2
