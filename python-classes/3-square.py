@@ -21,4 +21,7 @@ class Square:
         else:
             self.__size = size
      def area(self):
+         """
+         definition d un getter on va dire qui retourn l qire de carre
+         """
         return self.__size**2
