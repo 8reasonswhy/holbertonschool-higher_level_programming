@@ -14,7 +14,7 @@ class Square:
         l'instanciation d'un nouvel objet
         """
         if not isinstance(size, int):
-            raise TypeError ('size must me integer')
+            raise TypeError ('size must be an integer')
         elif size < 0 :
             raise ValueError ("size must be >= 0")
         else:
