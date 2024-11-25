@@ -14,7 +14,7 @@ class Square:
         """
         The __init__ method is a constructor that is called automatically
         when a new object is instantiated.
-        Qaund on veut initialiser le truc python 
+        Qaund on veut initialiser le truc python
         fait appel automatique au setter grace au tag
         """
         self.size = size  # Utilise le setter pour initialiser
