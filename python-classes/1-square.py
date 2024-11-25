@@ -12,8 +12,6 @@ class Square:
     This class does not currently implement any attributes or methods,
     but it is a placeholder for potential future features related to squares.
     """
-
-
     def __init__(self, size):
         """
         la methode init est un constructeur qui ce fait appeler automatiauement lors de l instanciation d un nouveau object 
