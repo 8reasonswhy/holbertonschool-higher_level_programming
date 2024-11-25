@@ -1,17 +1,21 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """
-Class squar avec un privat attribute size 
+This module defines a class Square to represent a square shape.
 """
 
 
-class Square :
+class Square:
     """
-    class Squar avec un attribue size private un attribue prive on lui ajout un double  _ devant lui pour dir que c est priv√
+    A class that defines a square.
+
+    This class does not currently implement any attributes or methods,
+    but it is a placeholder for potential future features related to squares.
     """
 
 
-    def __init__(self,size):
-        """ Alors la on de©fini le constructeur appeler init sur python le constructeur est appele automatiquement 
-        quand on veut instancier un nouveau object 
+    def __init__(self, size):
+        """
+        la methode init est un constructeur qui ce fait appeler automatiauement lors de l instanciation d un nouveau object 
         """
         self.__size = size
