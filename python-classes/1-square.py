@@ -14,6 +14,7 @@ class Square:
     """
     def __init__(self, size):
         """
-        la methode init est un constructeur qui ce fait appeler automatiauement lors de l instanciation d un nouveau object 
+        la methode init est un constructeur qui ce fait appeler automatiauement 
+        lors de l instanciation d un nouveau object 
         """
         self.__size = size
