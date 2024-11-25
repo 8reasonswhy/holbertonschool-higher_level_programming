@@ -4,6 +4,7 @@
 This module defines a class Square to represent a square shape.
 """
 
+
 class Square:
     """
     A class that defines a square.
@@ -12,9 +13,9 @@ class Square:
     but it is a placeholder for potential future features related to squares.
     """
 
-    def __init__(self, size):
+    def __init__(self, s):
         """
-        La méthode __init__ est un constructeur qui est appelé automatiquement lors de 
-        l'instanciation d'un nouvel objet.
+         __init_ un constructeur qui est appelé automatiquemen pour
+        l'instanciation 
         """
-        self.__size = size
+        self.__size = s
