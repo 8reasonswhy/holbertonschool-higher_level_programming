@@ -19,16 +19,41 @@ def max_integer(list=[]):
         i += 1
     return result
 
-class Test_max_integer(unittest.TestCase):
-    def test_1(self):
-        self.assertEqual(max_ineger([1,2], 2)
-    def test_2(self):
-        self.assertEqual(max_ineger([1,2,3,-5], 3)
-    def test_3(self):
-        self.assertIsNone(max_integer([])
-    def test_4(self):
-        self.assertEqual(max_integer([1, 3, 4, 2]), 4)
-    def test_5(self):
-        self.asserEqual(max_integer([-1, -3, -4, -2]), -1) 
+class TestMaxInteger(unittest.TestCase):
+
+    # Test lorsque la liste est vide
+    def test_empty_list(self):
+        self.assertIsNone(max_integer([]))
+
+    # Test d'une liste avec des éléments positifs
+    def test_positive_numbers(self):
+        self.assertEqual(max_integer([1, 2, 3, 4]), 4)
+    
+    # Test d'une liste avec des éléments négatifs
+    def test_negative_numbers(self):
+        self.assertEqual(max_integer([-1, -2, -3, -4]), -1)
+    
+    # Test d'une liste avec un mélange de nombres positifs et négatifs
+    def test_mixed_numbers(self):
+        self.assertEqual(max_integer([-1, 2, -3, 4]), 4)
+
+    # Test d'une liste avec un seul élément
+    def test_single_element(self):
+        self.assertEqual(max_integer([7]), 7)
+
+    # Test d'une liste avec des éléments flottants
+    def test_float_numbers(self):
+        self.assertEqual(max_integer([1.1, 2.2, 3.3, 0.4]), 3.3)
+
+    # Test d'une liste avec des éléments identiques
+    def test_identical_numbers(self):
+        self.assertEqual(max_integer([2, 2, 2, 2]), 2)
+
+    # Test de types non valides dans la liste
+    def test_invalid_type(self):
+        with self.assertRaises(TypeError):
+            max_integer([1, 2, 'a', 4])
+
+# Exécution des tests
 if __name__ == '__main__':
     unittest.main()
