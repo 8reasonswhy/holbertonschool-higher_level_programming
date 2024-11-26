@@ -26,9 +26,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertIsNone(max_integer([]))
 
     # Test d'une liste avec des éléments positifs
-    def test_positive_numbers(self):
-        result = max_integer([1, 2, 3, 4])
-        print(result, end="")
+    def test_max_at_the_end(self):
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
     
     # Test d'une liste avec des éléments négatifs
