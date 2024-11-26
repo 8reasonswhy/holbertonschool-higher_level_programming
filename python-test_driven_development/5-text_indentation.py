@@ -16,7 +16,10 @@ def text_indentation(text):
             stop = True
         else:
             if stop:
-                print(l.lstrip(), end='')
-                stop = False
+                if l == ' ':
+                    pass
+                else:
+                    print(l.lstrip(), end='')
+                    stop = False
             else:
                 print(l, end ='')
