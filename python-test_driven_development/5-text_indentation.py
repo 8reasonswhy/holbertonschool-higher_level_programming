@@ -21,7 +21,7 @@ def text_indentation(text):
                 if tt == ' ':
                     pass
                 else:
-                    print(tt.lstrip(), end= '')
+                    print(tt.lstrip(), end='')
                     stop = False
             else:
-                print(tt, end = '')
+                print(tt, end='')
