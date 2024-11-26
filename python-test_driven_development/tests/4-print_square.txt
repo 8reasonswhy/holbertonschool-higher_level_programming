@@ -1,0 +1,11 @@
+>>> print_squar(3)
+###
+###
+###
+
+>>> print_squar(1)
+#
+
+>>> print_squar(2)
+##
+##
