@@ -1,0 +1,13 @@
+>>> text_indentation("allo")
+allo
+>>> text_indentation("allo.Oui")
+allo.
+
+Oui
+>>> text_indentation("c est qui ? Ah oui cava? Oui et toi.")
+c est qui ?
+
+Ah oui cava?
+
+Oui et toi.
+
