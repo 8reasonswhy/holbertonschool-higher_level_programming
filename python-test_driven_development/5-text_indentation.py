@@ -2,24 +2,26 @@
 """
 la fonction qui saute la line
 """
+
+
 def text_indentation(text):
     """
-    le coeur de notre fonction 
+    le coeur de notre fonction
     """
-    if not(isinstance(text, str)):
+    if not (isinstance(text, str)):
         raise TypeError("text must be a string")
     stop = False
-    for l in text:
-        if l in ['.','?',':']:
-            print(l)
+    for tt in text:
+        if tt in ['.', '?', ':']:
+            print(tt)
             print()
             stop = True
         else:
             if stop:
-                if l == ' ':
+                if tt == ' ':
                     pass
                 else:
-                    print(l.lstrip(), end='')
+                    print(tt.lstrip(), end= '')
                     stop = False
             else:
-                print(l, end ='')
+                print(tt, end = '')
