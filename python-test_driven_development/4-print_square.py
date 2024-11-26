@@ -3,6 +3,9 @@
 la fonction qui dessice le truc
 """
 def print_square(size):
+    """
+    la fonction qui fait les trucs
+    """
     if not(isinstance(size, int)):
         raise TypeError("size must be an integer")
     elif size < 0 :
