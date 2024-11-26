@@ -1,9 +1,11 @@
->>> import sys
->>> sys.path.append('../')
->>> import importlib
->>> module = importlib.import_module("0-add_integer")  # Importation dynamique
->>> add_integer = module.add_integer  # Accéde la fonction du module
+>>> from add_integer import add_integer
 >>> add_integer(1, 2)
 3
 >>> add_integer(0, 0)
 0
+>>> add_integer(-1, 1)
+0
+>>> add_integer("a", 2)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
