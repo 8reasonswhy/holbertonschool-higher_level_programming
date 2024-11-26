@@ -1,5 +1,5 @@
 >>> import sys
->>> sys.path.append('/python-test_driven_development import add_integer')
+>>> sys.path.append('../')
 >>> from 0-add_integer import add_integer
 >>> add_integer(1, 2)
 3
