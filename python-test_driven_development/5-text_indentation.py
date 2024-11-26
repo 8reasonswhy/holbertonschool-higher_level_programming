@@ -17,5 +17,6 @@ def text_indentation(text):
         else:
             if stop:
                 print(l.lstrip(), end='')
+                stop = False
             else:
                 print(l, end ='')
