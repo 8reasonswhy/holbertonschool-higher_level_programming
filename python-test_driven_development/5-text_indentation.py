@@ -10,7 +10,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     stop = False
     for l in text:
-        if l =='.' or l == '?' or l == ':':
+        if l in ['.','?',':']:
             print(l)
             print('')
             stop = True
