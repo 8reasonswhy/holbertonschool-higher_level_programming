@@ -1,3 +1,9 @@
+>>> import sys
+>>> import importlib
+>>> sys.path.append('../')  # Ajoute le répertoire parent au sys.path
+
+>>> module = importlib.import_module("0-add_integer")  # Importation dynamique
+>>> add_integer = module.add_integer  # Accéder à la fonction du module
 >>> add_integer(1, 2)
 3
 >>> add_integer(0, 0)
