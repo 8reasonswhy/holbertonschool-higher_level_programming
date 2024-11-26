@@ -8,4 +8,5 @@
 >>> add_integer(0, 0)
 0
 >>> add_integer("a", 2)
+Traceback (most recent call last):
 TypeError: a must be an integer
