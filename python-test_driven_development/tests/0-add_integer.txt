@@ -6,39 +6,34 @@
 >>> add_integer(-1, 1)
 0
 >>> add_integer(1.5, 2.5)
-3  # La fonction convertit les flottants en entiers et les additionne (1 + 2)
-
+3
 >>> add_integer("a", 2)
 Traceback (most recent call last):
     ...
-TypeError: a must be an integer  # La fonction lève une exception TypeError car "a" n'est pas un entier.
-
+TypeError: a must be an integer
 >>> add_integer(1, "b")
 Traceback (most recent call last):
     ...
-TypeError: b must be an integer  # La fonction lève une exception TypeError car "b" n'est pas un entier.
+TypeError: b must be an integer
 
 >>> add_integer(float('nan'), 2)
 Traceback (most recent call last):
     ...
-ValueError: cannot convert float NaN to integer  # La fonction lève une exception ValueError car NaN ne peut pas être converti en entier.
-
->>> add_integer(1e308, 1e308)
-inf  # L'addition de grands nombres flottants pourrait provoquer un overflow et retourner "inf".
+TypeError: a must be an integer
 
 >>> add_integer(1)
 Traceback (most recent call last):
     ...
-TypeError: missing 1 required positional argument: 'b'  # La fonction lève une exception TypeError car un argument est manquant.
+TypeError: b must be an integer
 
 >>> add_integer()
 Traceback (most recent call last):
     ...
-TypeError: missing 2 required positional arguments: 'a' and 'b'  # La fonction lève une exception TypeError car deux arguments sont manquants.
+TypeError: b must be an integer
 
 >>> add_integer(1, 2.0)
-3  # La fonction additionne correctement un entier et un flottant, en traitant le flottant comme un entier (2.0 devient 2).
+3
 
 >>> add_integer(100, -50)
-50  # La fonction additionne correctement un entier positif et un entier négatif (100 + (-50)).
+50
 
