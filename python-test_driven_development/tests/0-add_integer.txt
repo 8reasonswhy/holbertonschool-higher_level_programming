@@ -29,7 +29,7 @@ TypeError: b must be an integer
 >>> add_integer()
 Traceback (most recent call last):
     ...
-TypeError: b must be an integer
+TypeError: missing 2 required positional arguments: 'a' and 'b'
 
 >>> add_integer(1, 2.0)
 3
