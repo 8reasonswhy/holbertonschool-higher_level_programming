@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """
-bon la fonction say my name 
+bon la fonction say my name
 """
+
+
 def say_my_name(first_name, last_name=""):
     """
-    la fonction qui fait le trucs 
+    la fonction qui fait le trucs
     """
-    if not(isinstance(first_name, str)or first_name is None):
+    if not (isinstance(first_name, str) or first_name is None):
         raise TypeError("first_name must be a string")
-    elif not(isinstance(last_name, str)):
+    elif not (isinstance(last_name, str)):
         raise TypeError("last_name must be a string")
-    print ("My name is", first_name, last_name)
+    print("My name is", first_name, last_name)
