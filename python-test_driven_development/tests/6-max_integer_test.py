@@ -23,29 +23,27 @@ class TestMaxInteger(unittest.TestCase):
 
     # Test for "max at the end" exists
     def test_max_at_end(self):
-        result = max_integer([1, 2, 3, 4, 5])
-        self.assertTrue(result == 5)
+        self.assertTrue(max_integer([1, 2, 3, 4, 5]) == 5)
 
     # Test for "max at the beginning" exists
         def test_max_at_beginning(self):
-        result = max_integer([5, 4, 3, 2, 1])
-        self.assertTrue(result == 5)
+        self.assertTrue(max_integer([5, 4, 3, 2, 1]) == 5)
 
     # Test for "max in the middle" exists
     def test_max_in_middle(self):
-        self.assertEqual(max_integer([1, 3, 5, 4, 2]), 5)
+        self.assertTrue(max_integer([1, 3, 5, 4, 2]) == 5)
 
     # Test for "one negative number in the list" exists
     def test_one_negative_number(self):
-        self.assertEqual(max_integer([5, -3, 2]), 5)
+        self.assertTrue(max_integer([5, -3, 2]) == 5)
 
     # Test for "only negative numbers in the list" exists
     def test_only_negative_numbers(self):
-        self.assertEqual(max_integer([-5, -4, -3, -2, -1]), -1)
+        self.assertTrue(max_integer([-5, -4, -3, -2, -1]) == -1)
 
     # Test for "list of one element" exists
     def test_list_of_one_element(self):
-        self.assertEqual(max_integer([10]), 10)
+        self.assertTrue(max_integer([10]) == 10)
 
     # Test for "list is empty" exists
     def test_empty_list(self):
