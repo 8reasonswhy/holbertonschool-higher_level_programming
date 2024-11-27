@@ -15,14 +15,14 @@ Traceback (most recent call last):
 TypeError: text must be a string
 
 >>> text_indentation("This is a test. \n\nIs it working? \nLet's check: yes!")
-    This is a test.
-    <BLANKLINE>
-    <BLANKLINE>
-    Is it working?
-    <BLANKLINE>
-    Let's check:
-    <BLANKLINE>
-    yes!
+This is a test.
+<BLANKLINE>
+<BLANKLINE>
+Is it working?
+<BLANKLINE>
+Let's check:
+<BLANKLINE>
+yes!
 
 >>> text_indentation()
 Traceback (most recent call last):
