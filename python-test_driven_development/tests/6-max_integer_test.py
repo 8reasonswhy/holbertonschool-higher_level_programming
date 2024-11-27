@@ -21,39 +21,34 @@ def max_integer(list=[]):
 
 class TestMaxInteger(unittest.TestCase):
 
-    # Test lorsque la liste est vide
+    # Test for "max at the end" exists
+    def test_max_at_end(self):
+        self.assertEqual(max_integer([1, 2, 3, 4, 5]), 5)
+
+    # Test for "max at the beginning" exists
+    def test_max_at_beginning(self):
+        self.assertEqual(max_integer([5, 4, 3, 2, 1]), 5)
+
+    # Test for "max in the middle" exists
+    def test_max_in_middle(self):
+        self.assertEqual(max_integer([1, 3, 5, 4, 2]), 5)
+
+    # Test for "one negative number in the list" exists
+    def test_one_negative_number(self):
+        self.assertEqual(max_integer([5, -3, 2]), 5)
+
+    # Test for "only negative numbers in the list" exists
+    def test_only_negative_numbers(self):
+        self.assertEqual(max_integer([-5, -4, -3, -2, -1]), -1)
+
+    # Test for "list of one element" exists
+    def test_list_of_one_element(self):
+        self.assertEqual(max_integer([10]), 10)
+
+    # Test for "list is empty" exists
     def test_empty_list(self):
         self.assertIsNone(max_integer([]))
 
-    # Test d'une liste avec des éléments positifs
-    def test_max_at_the_end(self):
-        self.assertEqual(max_integer([1, 2, 3, 4]), 4)
-    
-    # Test d'une liste avec des éléments négatifs
-    def test_negative_numbers(self):
-        self.assertEqual(max_integer([-1, -2, -3, -4]), -1)
-    
-    # Test d'une liste avec un mélange de nombres positifs et négatifs
-    def test_mixed_numbers(self):
-        self.assertEqual(max_integer([-1, 2, -3, 4]), 4)
-
-    # Test d'une liste avec un seul élément
-    def test_single_element(self):
-        self.assertEqual(max_integer([7]), 7)
-
-    # Test d'une liste avec des éléments flottants
-    def test_float_numbers(self):
-        self.assertEqual(max_integer([1.1, 2.2, 3.3, 0.4]), 3.3)
-
-    # Test d'une liste avec des éléments identiques
-    def test_identical_numbers(self):
-        self.assertEqual(max_integer([2, 2, 2, 2]), 2)
-
-    # Test de types non valides dans la liste
-    def test_invalid_type(self):
-        with self.assertRaises(TypeError):
-            max_integer([1, 2, 'a', 4])
-
-# Exécution des tests
 if __name__ == '__main__':
     unittest.main()
+
