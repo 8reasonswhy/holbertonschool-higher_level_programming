@@ -1,13 +1,29 @@
->>> text_indentation("allo")
-allo
->>> text_indentation("allo.Oui")
-allo.
+>>> text_indentation = __import__('5-text_indentation').text_indentation
 
-Oui
->>> text_indentation("c est qui ? Ah oui cava? Oui et toi.")
-c est qui ?
+>>> text_indentation("This is a test. Is it working? Let's check: yes!")
+This is a test.
 
-Ah oui cava?
+Is it working?
 
-Oui et toi.
+Let's check:
 
+yes!  # La fonction affiche le texte avec 2 nouvelles lignes après chaque '.', '?', et ':'.
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string  # Le type de text n'est pas une chaîne, une exception TypeError est levée.
+
+>>> text_indentation("This is a test. \n\nIs it working? \nLet's check: yes!")
+This is a test.
+
+Is it working?
+
+Let's check:
+
+yes!  # Le texte avec des lignes vides est traité correctement.
+
+>>> text_indentation()
+Traceback (most recent call last):
+    ...
+TypeError: missing 1 required positional argument: 'text'  # L'argument 'text' est manquant, une exception TypeError est levée.
