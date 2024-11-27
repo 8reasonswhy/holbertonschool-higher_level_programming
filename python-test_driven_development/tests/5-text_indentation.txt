@@ -2,28 +2,29 @@
 
 >>> text_indentation("This is a test. Is it working? Let's check: yes!")
 This is a test.
-
+<BLANKLINE>
 Is it working?
-
+<BLANKLINE>
 Let's check:
-
-yes!  # La fonction affiche le texte avec 2 nouvelles lignes après chaque '.', '?', et ':'.
+<BLANKLINE>
+yes!
 
 >>> text_indentation(123)
 Traceback (most recent call last):
     ...
-TypeError: text must be a string  # Le type de text n'est pas une chaîne, une exception TypeError est levée.
+TypeError: text must be a string
 
 >>> text_indentation("This is a test. \n\nIs it working? \nLet's check: yes!")
-This is a test.
-
-Is it working?
-
-Let's check:
-
-yes!  # Le texte avec des lignes vides est traité correctement.
+    This is a test.
+    <BLANKLINE>
+    <BLANKLINE>
+    Is it working?
+    <BLANKLINE>
+    Let's check:
+    <BLANKLINE>
+    yes!
 
 >>> text_indentation()
 Traceback (most recent call last):
     ...
-TypeError: missing 1 required positional argument: 'text'  # L'argument 'text' est manquant, une exception TypeError est levée.
+TypeError: text_indentation() missing 1 required positional argument: 'text'
