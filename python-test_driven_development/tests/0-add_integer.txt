@@ -24,7 +24,7 @@ ValueError: cannot convert float NaN to integer
 >>> add_integer(1)
 Traceback (most recent call last):
     ...
-TypeError: b must be an integer
+TypeError: missing 1 required positional argument: 'b'
 
 >>> add_integer()
 Traceback (most recent call last):
