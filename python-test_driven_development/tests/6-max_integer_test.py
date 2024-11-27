@@ -23,11 +23,13 @@ class TestMaxInteger(unittest.TestCase):
 
     # Test for "max at the end" exists
     def test_max_at_end(self):
-        self.assertEqual(max_integer([1, 2, 3, 4, 5]), 5)
+        result = max_integer([1, 2, 3, 4, 5])
+        self.assertTrue(result == 5)
 
     # Test for "max at the beginning" exists
-    def test_max_at_beginning(self):
-        self.assertEqual(max_integer([5, 4, 3, 2, 1]), 5)
+        def test_max_at_beginning(self):
+        result = max_integer([5, 4, 3, 2, 1])
+        self.assertTrue(result == 5)
 
     # Test for "max in the middle" exists
     def test_max_in_middle(self):
